@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getter Dan Setter</title>
+</head>
+
+<body>
+    <script>
+
+        const person = {
+            firstName: "Rizki",
+            lastName: "Ramadhan",
+
+            // Getter
+            get fullName() {
+                return `${this.firstName} ${this.lastName}`;
+            },
+
+            // Setter
+            set fullName(value) {
+                const array = value.split(" ");
+                this.firstName = array[0];
+                this.lastName = array[1];
+
+            }
+        };
+
+        // Untuk Mengakses Getter
+
+        // person.firstName = "Rama";
+        // console.info(person.fullName);
+
+        // Untuk Mengaskes Setter
+
+        person.fullName = "Budi Nugraha";
+        console.table(person);
+
+    </script>
+</body>
+
+</html>

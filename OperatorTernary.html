@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator Ternary</title>
+</head>
+
+<body>
+    <script>
+
+        // Tanpa Ternary Operator
+
+        const nilai = 70;
+        let ucapan;
+
+        if (nilai >= 75) {
+            ucapan = "Selamat Anda Lulus </br>";
+        } else {
+            ucapan = "Silahkan Coba Lagi </br>";
+        }
+
+        document.writeln(ucapan);
+
+        // Menggunakan Ternary Operator
+
+        ucapan = nilai >= 45 ? "Selamat Anda Lulus </br>" : "Silahkan Coba Lagi </br>";
+
+        document.writeln(ucapan);
+
+    </script>
+</body>
+
+</html>
